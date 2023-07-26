@@ -1,26 +1,39 @@
 //
 //  ContentView.swift
-//  Xcerpt2
+//  Xcerpt
 //
-//  Created by Brian Ho on 7/26/23.
+//  Created by Brian Ho on 5/30/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .home
+    enum Tab {
+        case home
+        case randomExcerpts
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            BookHome()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                .tag(Tab.home)
+            BookRandomExcerpts()
+                .tabItem {
+                    Label("Shuffle", systemImage: "shuffle")
+                }
+                .tag(Tab.randomExcerpts)
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(BookStore())
+            .environmentObject(UserPreferences())
     }
 }
