@@ -70,6 +70,7 @@
 		5E1009432A71D4F000FDB058 /* BookRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 		5E1009442A71D4F000FDB058 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E1009452A71D4F000FDB058 /* BookRandomExcerpts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRandomExcerpts.swift; sourceTree = "<group>"; };
+		5E1009632A71D7F700FDB058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 		5E1009172A71D45100FDB058 /* Xcerpt2 */ = {
 			isa = PBXGroup;
 			children = (
+				5E1009632A71D7F700FDB058 /* Info.plist */,
 				5E1009382A71D4EF00FDB058 /* AspectVGrid.swift */,
 				5E1009362A71D4EF00FDB058 /* Assets.xcassets */,
 				5E10092A2A71D4EE00FDB058 /* BindingExcerptView.swift */,
@@ -398,6 +400,7 @@
 				DEVELOPMENT_TEAM = WU5L7S97ZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Xcerpt2/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -431,6 +434,7 @@
 				DEVELOPMENT_TEAM = WU5L7S97ZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Xcerpt2/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
